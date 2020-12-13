@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #808080a8;
+}
+
+#root {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+input {
+    margin-top: 15px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: 2px solid rgb(87, 68, 68);
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6fca13;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 200px;
+    border: 2px solid rgb(87, 68, 68);
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 20px;
+    outline: none;
+    margin-top: 20px;
+    display: block;
+}
+
+button {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(87, 68, 68);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: grey;
+    background-color: #a6ff4e;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: grey;
+    color: wheat;
+}
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    list-style-type:none;
+}
+
+
+.author {
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comment-item::before {
+    content: "Комментарий: ";
+    color: #324e15;
+    font-style: normal;
+}
+
+.comment-item {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.date-time {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #324e15;
+}
+
+.error {
+    background-color: yellow;
+}
